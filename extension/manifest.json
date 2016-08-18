@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "XSSBlock",
+  "description": "Protects the user from GET/POST-based XSS attacks",
+  "version": "1.0.0",
+
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "notifications",
+    "<all_urls>"
+  ],
+   "background": {
+    "scripts": ["background.js"]
+  },
+  "incognito" : "spanning"
+}
